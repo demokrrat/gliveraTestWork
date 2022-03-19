@@ -1,0 +1,58 @@
+/* Body----------------------------------------------------------- * /
+html, body
+  font: $fz-base/$line-height-base $family-base
+  height: 100%
+  width: 100%
+  color: $color-black
+  background: $bg-color-base
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  min-width: 320px
+
+
+*, *:before, *:after
+  box-sizing: border-box
+
+html
+  +rem-baseline
+
+  &.no-webp
+    .is-webp
+      display: none
+
+    .is-nowebp
+      display: inline
+
+    .owl-carousel .owl-item img
+      &.is-webp
+        display: none
+
+      &.is-nowebp
+        display: inline
+
+#app
+  min-height: 100vh
+  display: flex
+  flex-flow: column nowrap
+  justify-content: flex-start
+  align-items: stretch
+  position: relative
+  overflow: hidden 
+
+*::-ms-backdrop, .content
+  min-height: 80vh
+
+.is-webp
+  display: inline
+
+.is-nowebp
+  display: none
+
+.owl-carousel .owl-item img
+  width: auto
+
+  &.is-webp
+    display: inline
+
+  &.is-nowebp
+    display: none

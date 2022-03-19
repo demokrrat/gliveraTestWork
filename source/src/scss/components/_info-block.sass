@@ -1,0 +1,141 @@
+.info-block
+  margin-top: rem(155px)
+  margin-bottom: rem(155px)
+  +media('<=phone')
+    margin: rem(80px) 0
+  &__head
+    margin-bottom: rem(60px)
+    +media('<=phone')
+      margin-bottom: rem(30px)
+  &__title
+    text-align: center
+    h2
+      margin: 0
+      +media('<=phone')
+        width: 80vw
+        margin: 0 auto
+  &__step
+    margin-bottom: rem(53px)
+    +media('<=phone')
+      margin-bottom: rem(20px)
+  &__row 
+    min-width: 100%
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    margin-left: rem(-10px)
+    margin-right: rem(-10px)
+    margin-bottom: rem(-20px)
+  &__row-item
+    padding: 0 rem(10px)
+    padding-bottom: rem(20px)
+    flex: 1
+    +media('<=tabletLarge')
+      flex: 1 0 100%
+      width: 100%
+      max-width: 100%
+  &__step-count
+    font-weight: 500
+    text-align: center
+    color: $color-green
+    text-transform: uppercase
+  &__step-title
+    font-weight: 300
+    font-size: rem(32px)
+    line-height: rem(43px)
+    text-align: center
+    margin: 0
+    +media('<=phone')
+      font-size: rem(24px)
+      line-height: 1.33
+  &__item 
+    background: $color-white
+    padding: rem(40px)
+    padding-top: rem(47px)
+    border-radius: rem(5.5px)
+    border: 1px solid #EBECED
+    display: flex
+    flex-direction: column
+    min-height: 340px
+    &--selected 
+      padding: rem(36px)
+      padding-top: rem(58px)
+      padding-bottom: rem(59px)
+      border: 4px solid #FF8D00
+      .btn
+        background: $color-orange
+        color: $color-white
+        text-decoration: none
+        border-color: $color-orange
+        pointer-events: none
+  &__item-date
+    font-weight: 500
+    text-transform: uppercase
+    text-align: center
+    position: relative
+    padding-bottom: 12px
+    margin-bottom: 11px
+    &::before
+      content: ''
+      width: 24px
+      height: 2px
+      background: $color-green
+      position: absolute
+      left: 50%
+      bottom: 0
+      transform: translateX(-50%)
+  &__item-cost
+    display: flex
+    align-items: baseline
+    justify-content: center
+    flex-flow: row nowrap
+    text-align: center
+    padding-bottom: rem(15px)
+    margin-bottom: rem(17px)
+    position: relative
+    &::before
+      content: ''
+      width: 200px
+      height: 1px
+      background: #EBECED
+      position: absolute
+      left: 50%
+      bottom: 0
+      transform: translateX(-50%)
+  &__item-cur
+    margin-right: rem(7px)
+    font-weight: 300
+    font-size: rem(24px)
+    margin-bottom: auto
+    margin-top: auto
+  &__item-price
+    font-size: rem(56px)
+    line-height: 1.33
+    font-weight: 300
+  &__item-period
+    font-weight: 300
+    font-size: rem(24px)
+  &__item-descr 
+    padding-bottom: rem(16px)
+    margin: auto
+    text-align: center
+    p
+      margin-top: rem(4px)
+      margin-bottom: rem(4px)
+      &:first-of-type
+        margin-top: 0
+        &:last-of-type
+          margin: 0
+          padding: 0
+      &:last-of-type
+        margin-bottom: 0
+  &__item-select 
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-top: auto
+    .btn
+      width: 205px
+      display: inline-flex
+      justify-content: center
+      align-items: center

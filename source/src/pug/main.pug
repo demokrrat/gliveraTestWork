@@ -1,0 +1,59 @@
+extends layouts/_default
+
+block data
+  -
+    vars = {
+      title: 'Главная'
+    }
+
+block header
+  include includes/header/_header
+
+block content
+  .container
+    .info-block
+      .info-block__head 
+        .info-block__title 
+          h2 Buy Our Safe & Secure VPN
+      .info-block__body 
+        .info-block__step 
+          .info-block__step-count STEP 1 
+          h3.info-block__step-title   
+             | Choose Your Plan
+        .info-block__row 
+          .info-block__row-item
+            .info-block__item 
+              .info-block__item-date MONTHLY
+              .info-block__item-cost
+                .info-block__item-cur $
+                .info-block__item-price 6.95
+                .info-block__item-period /mo.
+              .info-block__item-descr 
+                p Includes all VPN features.
+              .info-block__item-select 
+                a(href="").btn SELECT PLAN
+          .info-block__row-item
+            .info-block__item.info-block__item--selected 
+              .info-block__item-date TWO YEARS
+              .info-block__item-cost
+                .info-block__item-cur $
+                .info-block__item-price 2.91
+                .info-block__item-period /mo.
+              .info-block__item-descr 
+                p <span class="color-red">$166.80</span> $69.95 per two years
+                p.text-bold Save 58%*
+              .info-block__item-select 
+                a(href="").btn PLAN SELECTED
+
+          .info-block__row-item
+            .info-block__item 
+              .info-block__item-date YEARLY
+              .info-block__item-cost
+                .info-block__item-cur $
+                .info-block__item-price 3.33
+                .info-block__item-period /mo.
+              .info-block__item-descr 
+                p <span class="color-red">$83.40</span> $39.95 per year
+                p.text-bold Save 52%*
+              .info-block__item-select 
+                a(href="").btn SELECT PLAN
